@@ -1,0 +1,441 @@
+{
+  "source": "/home/likhon/.slk/.prjt/samples/vtest.avi",
+  "profile": "default",
+  "weights": "yolov8n.pt",
+  "tracker": "botsort.yaml",
+  "frames": 795,
+  "video_fps": 10.0,
+  "resolution": [
+    768,
+    576
+  ],
+  "mean_track_ms": 50.76,
+  "track_fps": 19.7,
+  "unique_tracks_by_class": {
+    "car": 3,
+    "person": 34,
+    "truck": 2
+  },
+  "max_persons_in_frame": 9,
+  "alerts_by_type": {
+    "wrong_way": 26,
+    "fall": 1
+  },
+  "alerts": [
+    {
+      "frame": 22,
+      "video_time_s": 2.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 1,
+      "confidence": 0.979,
+      "details": {
+        "heading_deg": 187.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 172.3
+      },
+      "thumbnail": "00022_wrong_way_1.jpg"
+    },
+    {
+      "frame": 22,
+      "video_time_s": 2.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 3,
+      "confidence": 0.965,
+      "details": {
+        "heading_deg": 192.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 167.3
+      },
+      "thumbnail": "00022_wrong_way_3.jpg"
+    },
+    {
+      "frame": 34,
+      "video_time_s": 3.4,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 7,
+      "confidence": 0.951,
+      "details": {
+        "heading_deg": 197.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 162.2
+      },
+      "thumbnail": "00034_wrong_way_7.jpg"
+    },
+    {
+      "frame": 39,
+      "video_time_s": 3.9,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 9,
+      "confidence": 0.959,
+      "details": {
+        "heading_deg": 194.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 165.1
+      },
+      "thumbnail": "00039_wrong_way_9.jpg"
+    },
+    {
+      "frame": 62,
+      "video_time_s": 6.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 16,
+      "confidence": 0.909,
+      "details": {
+        "heading_deg": 212.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 147.2
+      },
+      "thumbnail": "00062_wrong_way_16.jpg"
+    },
+    {
+      "frame": 69,
+      "video_time_s": 6.9,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 14,
+      "confidence": 0.906,
+      "details": {
+        "heading_deg": 213.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 146.1
+      },
+      "thumbnail": "00069_wrong_way_14.jpg"
+    },
+    {
+      "frame": 102,
+      "video_time_s": 10.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 20,
+      "confidence": 0.98,
+      "details": {
+        "heading_deg": 172.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 172.7
+      },
+      "thumbnail": "00102_wrong_way_20.jpg"
+    },
+    {
+      "frame": 137,
+      "video_time_s": 13.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 22,
+      "confidence": 0.962,
+      "details": {
+        "heading_deg": 193.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 166.2
+      },
+      "thumbnail": "00137_wrong_way_22.jpg"
+    },
+    {
+      "frame": 153,
+      "video_time_s": 15.3,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 23,
+      "confidence": 0.975,
+      "details": {
+        "heading_deg": 189.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 170.9
+      },
+      "thumbnail": "00153_wrong_way_23.jpg"
+    },
+    {
+      "frame": 182,
+      "video_time_s": 18.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 27,
+      "confidence": 0.755,
+      "details": {
+        "heading_deg": 268.2,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 91.8
+      },
+      "thumbnail": "00182_wrong_way_27.jpg"
+    },
+    {
+      "frame": 232,
+      "video_time_s": 23.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 12,
+      "confidence": 0.938,
+      "details": {
+        "heading_deg": 202.3,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 157.7
+      },
+      "thumbnail": "00232_wrong_way_12.jpg"
+    },
+    {
+      "frame": 241,
+      "video_time_s": 24.1,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 31,
+      "confidence": 0.965,
+      "details": {
+        "heading_deg": 192.6,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 167.4
+      },
+      "thumbnail": "00241_wrong_way_31.jpg"
+    },
+    {
+      "frame": 251,
+      "video_time_s": 25.1,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 29,
+      "confidence": 0.965,
+      "details": {
+        "heading_deg": 192.5,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 167.5
+      },
+      "thumbnail": "00251_wrong_way_29.jpg"
+    },
+    {
+      "frame": 368,
+      "video_time_s": 36.8,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 36,
+      "confidence": 0.946,
+      "details": {
+        "heading_deg": 199.4,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 160.6
+      },
+      "thumbnail": "00368_wrong_way_36.jpg"
+    },
+    {
+      "frame": 377,
+      "video_time_s": 37.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 37,
+      "confidence": 0.995,
+      "details": {
+        "heading_deg": 178.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 178.1
+      },
+      "thumbnail": "00377_wrong_way_37.jpg"
+    },
+    {
+      "frame": 435,
+      "video_time_s": 43.5,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 42,
+      "confidence": 0.919,
+      "details": {
+        "heading_deg": 151.0,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 151.0
+      },
+      "thumbnail": "00435_wrong_way_42.jpg"
+    },
+    {
+      "frame": 442,
+      "video_time_s": 44.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 43,
+      "confidence": 0.966,
+      "details": {
+        "heading_deg": 192.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 167.9
+      },
+      "thumbnail": "00442_wrong_way_43.jpg"
+    },
+    {
+      "frame": 482,
+      "video_time_s": 48.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 44,
+      "confidence": 0.919,
+      "details": {
+        "heading_deg": 209.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 150.9
+      },
+      "thumbnail": "00482_wrong_way_44.jpg"
+    },
+    {
+      "frame": 523,
+      "video_time_s": 52.3,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 46,
+      "confidence": 0.934,
+      "details": {
+        "heading_deg": 203.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 156.2
+      },
+      "thumbnail": "00523_wrong_way_46.jpg"
+    },
+    {
+      "frame": 526,
+      "video_time_s": 52.6,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 47,
+      "confidence": 0.995,
+      "details": {
+        "heading_deg": 181.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 178.1
+      },
+      "thumbnail": "00526_wrong_way_47.jpg"
+    },
+    {
+      "frame": 529,
+      "video_time_s": 52.9,
+      "event_type": "fall",
+      "severity": "critical",
+      "track_id": 46,
+      "confidence": 0.778,
+      "details": {
+        "aspect_ratio_drop_pct": 55.6,
+        "persisted_sec": 2.2,
+        "speed_px_per_sec": 39.9
+      },
+      "thumbnail": "00529_fall_46.jpg"
+    },
+    {
+      "frame": 552,
+      "video_time_s": 55.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 53,
+      "confidence": 0.98,
+      "details": {
+        "heading_deg": 172.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 172.7
+      },
+      "thumbnail": "00552_wrong_way_53.jpg"
+    },
+    {
+      "frame": 592,
+      "video_time_s": 59.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 55,
+      "confidence": 0.937,
+      "details": {
+        "heading_deg": 202.6,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 157.4
+      },
+      "thumbnail": "00592_wrong_way_55.jpg"
+    },
+    {
+      "frame": 678,
+      "video_time_s": 67.8,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 62,
+      "confidence": 0.972,
+      "details": {
+        "heading_deg": 190.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 169.9
+      },
+      "thumbnail": "00678_wrong_way_62.jpg"
+    },
+    {
+      "frame": 713,
+      "video_time_s": 71.3,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 64,
+      "confidence": 0.982,
+      "details": {
+        "heading_deg": 186.3,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 173.7
+      },
+      "thumbnail": "00713_wrong_way_64.jpg"
+    },
+    {
+      "frame": 720,
+      "video_time_s": 72.0,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 67,
+      "confidence": 0.95,
+      "details": {
+        "heading_deg": 161.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 161.8
+      },
+      "thumbnail": "00720_wrong_way_67.jpg"
+    },
+    {
+      "frame": 759,
+      "video_time_s": 75.9,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 73,
+      "confidence": 0.986,
+      "details": {
+        "heading_deg": 174.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 174.9
+      },
+      "thumbnail": "00759_wrong_way_73.jpg"
+    }
+  ],
+  "rules": {
+    "fall": {
+      "enabled": true,
+      "aspect_ratio_drop_pct": 50,
+      "window_sec": 0.5,
+      "min_persist_sec": 0.5,
+      "velocity_threshold_px_per_sec": 40
+    },
+    "loitering": {
+      "enabled": true,
+      "radius_px": 60,
+      "min_duration_sec": 30
+    },
+    "abandoned_object": {
+      "enabled": true,
+      "classes": [
+        24,
+        26,
+        28
+      ],
+      "stationary_sec": 300,
+      "owner_distance_px": 400,
+      "stationary_radius_px": 20
+    },
+    "crowd_density": {
+      "enabled": true,
+      "person_count_threshold": 8,
+      "sustained_sec": 30,
+      "roi": null
+    },
+    "wrong_way": {
+      "enabled": true,
+      "angle_threshold_deg": 90,
+      "min_speed_px_per_sec": 15,
+      "min_persist_sec": 2.0
+    }
+  }
+}

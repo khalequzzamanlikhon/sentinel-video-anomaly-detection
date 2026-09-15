@@ -1,0 +1,48 @@
+# Anomaly rule thresholds and alert behaviour.
+rules:
+  fall:
+    enabled: true
+    aspect_ratio_drop_pct: 50 # height/width must drop by this % ...
+    window_sec: 0.5           # ... within this many seconds
+    min_persist_sec: 0.5      # then must persist (low aspect ratio, low velocity) this long
+    velocity_threshold_px_per_sec: 40
+
+  loitering:
+    enabled: true
+    radius_px: 60             # track must stay within this radius ...
+    min_duration_sec: 30      # ... for at least this long
+
+  abandoned_object:
+    enabled: true
+    classes: [24, 26, 28]     # backpack, handbag, suitcase
+    stationary_sec: 300       # 5 minutes
+    owner_distance_px: 400    # nearest person must have moved this far away
+    stationary_radius_px: 20
+
+  crowd_density:
+    enabled: true
+    person_count_threshold: 8
+    sustained_sec: 30
+    roi: null                 # optional [x1, y1, x2, y2] normalized; null = whole frame
+
+  wrong_way:
+    enabled: true
+    angle_threshold_deg: 90
+    min_speed_px_per_sec: 15
+    min_persist_sec: 2.0
+
+alerting:
+  dedup_window_sec: 30        # same track + event type within this window = one alert
+  severity:
+    fall: critical
+    abandoned_object: high
+    crowd_density: medium
+    wrong_way: medium
+    loitering: low
+  clip:
+    pre_event_sec: 5
+    post_event_sec: 5
+  storage:
+    db_path: data/alerts.db
+    clips_dir: data/clips
+    thumbnails_dir: data/thumbnails

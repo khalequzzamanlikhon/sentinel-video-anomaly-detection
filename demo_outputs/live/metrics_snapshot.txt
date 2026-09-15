@@ -1,0 +1,10 @@
+inference_fps{source="vtest"} 18.115056390579646
+inference_fps{source="synthetic"} 33.311868299788266
+alert_count_total{event_type="wrong_way",severity="medium",source="vtest"} 1.0
+alert_count_created{event_type="wrong_way",severity="medium",source="vtest"} 1.789471439467121e+09
+stream_lag_seconds{source="vtest"} 0.021043777465820312
+stream_lag_seconds{source="synthetic"} 0.026030778884887695
+frames_processed_total{source="vtest"} 1041.0
+frames_processed_total{source="synthetic"} 1081.0
+frames_processed_created{source="vtest"} 1.7894714284982636e+09
+frames_processed_created{source="synthetic"} 1.7894714285209022e+09

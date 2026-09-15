@@ -1,0 +1,31 @@
+services:
+  sentinel:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000" # Prometheus metrics
+    volumes:
+      - ../data:/app/data
+      - ../config:/app/config
+    command: ["python", "-m", "sentinel.main", "--config", "config", "--headless"]
+
+  dashboard:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../data:/app/data
+      - ../config:/app/config
+    command: ["streamlit", "run", "sentinel/dashboard/app.py", "--server.address=0.0.0.0"]
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - sentinel

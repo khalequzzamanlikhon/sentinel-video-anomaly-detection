@@ -1,0 +1,44 @@
+[project]
+name = "sentinel"
+version = "0.1.0"
+description = "Multi-camera real-time video anomaly detection"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "opencv-python>=4.9",
+    "numpy>=1.24",
+    "ultralytics>=8.2",
+    "lap>=0.5",
+    "PyYAML>=6.0",
+    "streamlit>=1.32",
+    "pandas>=2.0",
+    "prometheus-client>=0.20",
+]
+
+[project.optional-dependencies]
+# Tier 2: pretrained/fine-tunable action recognition (SlowFast/X3D via PyTorchVideo) and
+# the LSTM trajectory autoencoder. Not required to run the Tier 1 rule-based system.
+actions = [
+    "pytorchvideo",
+    "torch>=2.0",
+    "torchvision>=0.15",
+]
+# Tier 2/3: experiment tracking + dataset versioning for training scripts (see ROADMAP.md).
+mlops = [
+    "mlflow>=2.10",
+    "dvc>=3.0",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sentinel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,6 @@
+# Headless server: no webcam, so both sources are files.
+sources:
+  - {name: vtest, type: file, source: /home/likhon/.slk/.prjt/samples/vtest.avi, roi: null}
+  - {name: synthetic, type: file, source: /home/likhon/.slk/.prjt/video-anomaly/data/raw/sample_clips/sample1.mp4, roi: null}
+expected_flow_deg: {vtest: 0, synthetic: 0}
+reconnect: {max_retries: 3, retry_delay_sec: 1.0}

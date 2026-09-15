@@ -1,0 +1,549 @@
+{
+  "source": "/home/likhon/.slk/.prjt/samples/vtest.avi",
+  "profile": "demo",
+  "weights": "yolov8n.pt",
+  "tracker": "botsort.yaml",
+  "frames": 795,
+  "video_fps": 10.0,
+  "resolution": [
+    768,
+    576
+  ],
+  "mean_track_ms": 55.71,
+  "track_fps": 18.0,
+  "unique_tracks_by_class": {
+    "person": 34,
+    "truck": 2,
+    "car": 3
+  },
+  "max_persons_in_frame": 9,
+  "alerts_by_type": {
+    "wrong_way": 28,
+    "crowd_density": 1,
+    "loitering": 5,
+    "fall": 1
+  },
+  "alerts": [
+    {
+      "frame": 17,
+      "video_time_s": 1.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 1,
+      "confidence": 0.993,
+      "details": {
+        "heading_deg": 182.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 177.3
+      },
+      "thumbnail": "00017_wrong_way_1.jpg"
+    },
+    {
+      "frame": 17,
+      "video_time_s": 1.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 3,
+      "confidence": 0.965,
+      "details": {
+        "heading_deg": 192.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 167.3
+      },
+      "thumbnail": "00017_wrong_way_3.jpg"
+    },
+    {
+      "frame": 29,
+      "video_time_s": 2.9,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 7,
+      "confidence": 0.939,
+      "details": {
+        "heading_deg": 201.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 158.1
+      },
+      "thumbnail": "00029_wrong_way_7.jpg"
+    },
+    {
+      "frame": 34,
+      "video_time_s": 3.4,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 9,
+      "confidence": 0.954,
+      "details": {
+        "heading_deg": 196.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 163.3
+      },
+      "thumbnail": "00034_wrong_way_9.jpg"
+    },
+    {
+      "frame": 54,
+      "video_time_s": 5.4,
+      "event_type": "crowd_density",
+      "severity": "medium",
+      "track_id": null,
+      "confidence": 0.65,
+      "details": {
+        "person_count": 9,
+        "sustained_sec": 3.0
+      },
+      "thumbnail": "00054_crowd_density_None.jpg"
+    },
+    {
+      "frame": 57,
+      "video_time_s": 5.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 16,
+      "confidence": 0.941,
+      "details": {
+        "heading_deg": 201.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 158.9
+      },
+      "thumbnail": "00057_wrong_way_16.jpg"
+    },
+    {
+      "frame": 64,
+      "video_time_s": 6.4,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 14,
+      "confidence": 0.906,
+      "details": {
+        "heading_deg": 213.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 146.1
+      },
+      "thumbnail": "00064_wrong_way_14.jpg"
+    },
+    {
+      "frame": 77,
+      "video_time_s": 7.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 19,
+      "confidence": 0.979,
+      "details": {
+        "heading_deg": 172.5,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 172.5
+      },
+      "thumbnail": "00077_wrong_way_19.jpg"
+    },
+    {
+      "frame": 85,
+      "video_time_s": 8.5,
+      "event_type": "loitering",
+      "severity": "low",
+      "track_id": 12,
+      "confidence": 0.842,
+      "details": {
+        "radius_px": 19.8,
+        "duration_sec": 6.0
+      },
+      "thumbnail": "00085_loitering_12.jpg"
+    },
+    {
+      "frame": 97,
+      "video_time_s": 9.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 20,
+      "confidence": 0.975,
+      "details": {
+        "heading_deg": 170.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 170.9
+      },
+      "thumbnail": "00097_wrong_way_20.jpg"
+    },
+    {
+      "frame": 132,
+      "video_time_s": 13.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 22,
+      "confidence": 0.977,
+      "details": {
+        "heading_deg": 188.2,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 171.8
+      },
+      "thumbnail": "00132_wrong_way_22.jpg"
+    },
+    {
+      "frame": 148,
+      "video_time_s": 14.8,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 23,
+      "confidence": 0.97,
+      "details": {
+        "heading_deg": 190.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 169.2
+      },
+      "thumbnail": "00148_wrong_way_23.jpg"
+    },
+    {
+      "frame": 177,
+      "video_time_s": 17.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 27,
+      "confidence": 0.755,
+      "details": {
+        "heading_deg": 268.2,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 91.8
+      },
+      "thumbnail": "00177_wrong_way_27.jpg"
+    },
+    {
+      "frame": 210,
+      "video_time_s": 21.0,
+      "event_type": "loitering",
+      "severity": "low",
+      "track_id": 7,
+      "confidence": 0.618,
+      "details": {
+        "radius_px": 47.8,
+        "duration_sec": 6.0
+      },
+      "thumbnail": "00210_loitering_7.jpg"
+    },
+    {
+      "frame": 210,
+      "video_time_s": 21.0,
+      "event_type": "loitering",
+      "severity": "low",
+      "track_id": 9,
+      "confidence": 0.605,
+      "details": {
+        "radius_px": 49.4,
+        "duration_sec": 6.0
+      },
+      "thumbnail": "00210_loitering_9.jpg"
+    },
+    {
+      "frame": 227,
+      "video_time_s": 22.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 12,
+      "confidence": 0.943,
+      "details": {
+        "heading_deg": 200.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 159.3
+      },
+      "thumbnail": "00227_wrong_way_12.jpg"
+    },
+    {
+      "frame": 236,
+      "video_time_s": 23.6,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 31,
+      "confidence": 0.948,
+      "details": {
+        "heading_deg": 198.5,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 161.5
+      },
+      "thumbnail": "00236_wrong_way_31.jpg"
+    },
+    {
+      "frame": 246,
+      "video_time_s": 24.6,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 29,
+      "confidence": 0.945,
+      "details": {
+        "heading_deg": 199.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 160.1
+      },
+      "thumbnail": "00246_wrong_way_29.jpg"
+    },
+    {
+      "frame": 363,
+      "video_time_s": 36.3,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 36,
+      "confidence": 0.946,
+      "details": {
+        "heading_deg": 199.4,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 160.6
+      },
+      "thumbnail": "00363_wrong_way_36.jpg"
+    },
+    {
+      "frame": 372,
+      "video_time_s": 37.2,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 37,
+      "confidence": 0.991,
+      "details": {
+        "heading_deg": 176.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 176.9
+      },
+      "thumbnail": "00372_wrong_way_37.jpg"
+    },
+    {
+      "frame": 430,
+      "video_time_s": 43.0,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 42,
+      "confidence": 0.906,
+      "details": {
+        "heading_deg": 146.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 146.1
+      },
+      "thumbnail": "00430_wrong_way_42.jpg"
+    },
+    {
+      "frame": 436,
+      "video_time_s": 43.6,
+      "event_type": "loitering",
+      "severity": "low",
+      "track_id": 37,
+      "confidence": 0.601,
+      "details": {
+        "radius_px": 49.9,
+        "duration_sec": 6.0
+      },
+      "thumbnail": "00436_loitering_37.jpg"
+    },
+    {
+      "frame": 437,
+      "video_time_s": 43.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 43,
+      "confidence": 0.969,
+      "details": {
+        "heading_deg": 191.3,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 168.7
+      },
+      "thumbnail": "00437_wrong_way_43.jpg"
+    },
+    {
+      "frame": 477,
+      "video_time_s": 47.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 44,
+      "confidence": 0.937,
+      "details": {
+        "heading_deg": 202.7,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 157.3
+      },
+      "thumbnail": "00477_wrong_way_44.jpg"
+    },
+    {
+      "frame": 518,
+      "video_time_s": 51.8,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 46,
+      "confidence": 0.952,
+      "details": {
+        "heading_deg": 197.4,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 162.6
+      },
+      "thumbnail": "00518_wrong_way_46.jpg"
+    },
+    {
+      "frame": 521,
+      "video_time_s": 52.1,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 47,
+      "confidence": 0.985,
+      "details": {
+        "heading_deg": 185.4,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 174.6
+      },
+      "thumbnail": "00521_wrong_way_47.jpg"
+    },
+    {
+      "frame": 529,
+      "video_time_s": 52.9,
+      "event_type": "fall",
+      "severity": "critical",
+      "track_id": 46,
+      "confidence": 0.778,
+      "details": {
+        "aspect_ratio_drop_pct": 55.6,
+        "persisted_sec": 2.2,
+        "speed_px_per_sec": 39.9
+      },
+      "thumbnail": "00529_fall_46.jpg"
+    },
+    {
+      "frame": 547,
+      "video_time_s": 54.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 53,
+      "confidence": 0.962,
+      "details": {
+        "heading_deg": 193.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 166.2
+      },
+      "thumbnail": "00547_wrong_way_53.jpg"
+    },
+    {
+      "frame": 551,
+      "video_time_s": 55.1,
+      "event_type": "loitering",
+      "severity": "low",
+      "track_id": 42,
+      "confidence": 0.604,
+      "details": {
+        "radius_px": 49.4,
+        "duration_sec": 6.0
+      },
+      "thumbnail": "00551_loitering_42.jpg"
+    },
+    {
+      "frame": 587,
+      "video_time_s": 58.7,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 55,
+      "confidence": 0.95,
+      "details": {
+        "heading_deg": 197.9,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 162.1
+      },
+      "thumbnail": "00587_wrong_way_55.jpg"
+    },
+    {
+      "frame": 673,
+      "video_time_s": 67.3,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 62,
+      "confidence": 0.956,
+      "details": {
+        "heading_deg": 195.8,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 164.2
+      },
+      "thumbnail": "00673_wrong_way_62.jpg"
+    },
+    {
+      "frame": 708,
+      "video_time_s": 70.8,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 64,
+      "confidence": 0.978,
+      "details": {
+        "heading_deg": 188.0,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 172.0
+      },
+      "thumbnail": "00708_wrong_way_64.jpg"
+    },
+    {
+      "frame": 715,
+      "video_time_s": 71.5,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 67,
+      "confidence": 0.97,
+      "details": {
+        "heading_deg": 169.0,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 169.0
+      },
+      "thumbnail": "00715_wrong_way_67.jpg"
+    },
+    {
+      "frame": 754,
+      "video_time_s": 75.4,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 73,
+      "confidence": 0.99,
+      "details": {
+        "heading_deg": 183.4,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 176.6
+      },
+      "thumbnail": "00754_wrong_way_73.jpg"
+    },
+    {
+      "frame": 790,
+      "video_time_s": 79.0,
+      "event_type": "wrong_way",
+      "severity": "medium",
+      "track_id": 57,
+      "confidence": 0.875,
+      "details": {
+        "heading_deg": 135.1,
+        "expected_flow_deg": 0.0,
+        "deviation_deg": 135.1
+      },
+      "thumbnail": "00790_wrong_way_57.jpg"
+    }
+  ],
+  "rules": {
+    "fall": {
+      "enabled": true,
+      "aspect_ratio_drop_pct": 50,
+      "window_sec": 0.5,
+      "min_persist_sec": 0.5,
+      "velocity_threshold_px_per_sec": 40
+    },
+    "loitering": {
+      "enabled": true,
+      "radius_px": 50,
+      "min_duration_sec": 6
+    },
+    "abandoned_object": {
+      "enabled": true,
+      "classes": [
+        24,
+        26,
+        28
+      ],
+      "stationary_sec": 10,
+      "owner_distance_px": 400,
+      "stationary_radius_px": 20
+    },
+    "crowd_density": {
+      "enabled": true,
+      "person_count_threshold": 6,
+      "sustained_sec": 3,
+      "roi": null
+    },
+    "wrong_way": {
+      "enabled": true,
+      "angle_threshold_deg": 90,
+      "min_speed_px_per_sec": 15,
+      "min_persist_sec": 1.5
+    }
+  }
+}

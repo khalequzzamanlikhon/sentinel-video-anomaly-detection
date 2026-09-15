@@ -1,0 +1,36 @@
+# Model configuration.
+detection:
+  weights: yolov8n.pt # yolov8n/s/m/l/x.pt -- larger = more accurate, slower.
+                       # Ultralytics auto-downloads pretrained COCO weights on first use.
+  confidence: 0.35
+  iou: 0.5
+  device: auto # "auto" | "cpu" | "cuda:0"
+  classes: # COCO class ids: 0=person, 24=backpack, 26=handbag, 28=suitcase,
+           # 2=car, 3=motorcycle, 5=bus, 7=truck
+    - 0
+    - 24
+    - 26
+    - 28
+    - 2
+    - 3
+    - 5
+    - 7
+
+tracking:
+  tracker: botsort.yaml # "botsort.yaml" (with ReID) or "bytetrack.yaml"
+  track_high_thresh: 0.5
+  track_buffer: 60 # frames to keep a lost track alive before dropping it
+  match_thresh: 0.8
+  persist: true
+
+pipeline:
+  process_every_nth_frame: 2 # frame skipping for throughput; interpolated frames are display-only
+  frame_queue_size: 8 # bounded per-source queue; oldest frame dropped when full
+  trajectory_history_len: 150 # frames of (x, y, w, h, t) kept per track
+
+actions:
+  enabled: false # Tier 2 plugin -- set true once `pip install -e .[actions]` is done
+  backend: slowfast # "slowfast" | "x3d"
+  clip_len_sec: 2.0
+  run_every_sec: 2.0
+  weights: pretrained # "pretrained" (Kinetics-400 zero-shot) or a path to fine-tuned weights

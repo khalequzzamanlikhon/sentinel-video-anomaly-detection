@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model weights (large, reproducible via download or training -- don't commit)
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Runtime data -- alerts DB, extracted clips/thumbnails
+data/alerts.db
+data/clips/*
+data/thumbnails/*
+!data/clips/.gitkeep
+!data/thumbnails/.gitkeep
+
+# Raw datasets (MOT17/UCF-101/etc. -- see ROADMAP.md) -- large, don't commit.
+# The small synthetic sample_clips/ used for the out-of-the-box demo ARE tracked.
+data/raw/*
+!data/raw/sample_clips/
+data/processed/*
+!data/processed/.gitkeep
+
+# MLOps
+mlruns/
+.dvc/cache/
+.dvc/tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Original planning PDF stays local (not portfolio-relevant to publish)
+project_sentinel_anomaly_detection.pdf

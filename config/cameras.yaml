@@ -1,0 +1,29 @@
+# Camera / source definitions.
+# type: "webcam" (source = device index), "file" (source = path), "rtsp" (source = rtsp:// URL)
+sources:
+  - name: cam1
+    type: webcam
+    source: 0
+    roi: null # optional [x1, y1, x2, y2] in normalized 0-1 coords
+
+  - name: cam2
+    type: file
+    source: data/raw/sample_clips/sample1.mp4
+    roi: null
+
+  - name: cam3
+    type: file
+    source: data/raw/sample_clips/sample2.mp4
+    roi: null
+
+# Expected "normal" flow direction in degrees (0 = right, 90 = down), used by the
+# wrong-way-movement rule. Set per camera if traffic direction differs.
+expected_flow_deg:
+  cam1: 0
+  cam2: 0
+  cam3: 0
+
+# Reconnect behaviour for RTSP/USB sources.
+reconnect:
+  max_retries: 10
+  retry_delay_sec: 2.0
