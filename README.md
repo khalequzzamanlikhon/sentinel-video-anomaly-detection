@@ -14,7 +14,7 @@ wrong-way movement) with thumbnails, clips, Prometheus metrics and a Streamlit d
 [![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)](https://prometheus.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
 
-[Verified run](#verified-run-2026-09-15) · [Architecture](#architecture) · [Quickstart](#quickstart) · [Configuration](#configuration) · [Outputs](#whats-in-demo_outputs)
+[Verified run](#verified-run-2026-09-15) · [Architecture](#architecture) · [Quickstart](#quickstart) · [Configuration](#configuration)
 
 ![Sentinel on OpenCV's vtest.avi](docs/demo/sentinel_demo.gif)
 
@@ -24,9 +24,9 @@ wrong-way movement) with thumbnails, clips, Prometheus metrics and a Streamlit d
 
 ## Verified run (2026-09-15)
 
-The test suite, an offline render, the FPS benchmark, the live headless CLI and a soak
-test were all run on a Linux GPU server, and every stage finished successfully.
-Raw outputs are in [`demo_outputs/`](demo_outputs/).
+I ran the test suite, an offline render, the FPS benchmark, the live headless CLI and
+a soak test on a Linux GPU server, and every stage finished successfully. Raw outputs
+are in [`demo_outputs/`](demo_outputs/).
 
 **Environment:** Python 3.11 (conda), `torch 2.4.1+cu121`, `ultralytics 8.4.152`,
 `opencv 4.11.0`, NVIDIA RTX A5000. Weights: pretrained `yolov8n.pt` (COCO, no fine-tuning).
@@ -169,21 +169,6 @@ sources switched to files and storage paths redirected.
 - [config/models.yaml](config/models.yaml): YOLO weights, confidence, classes, tracker, frame skip.
 - [config/alerts.yaml](config/alerts.yaml): per-rule thresholds, severity mapping, dedup window, clip length, storage paths.
 
-## What's in `demo_outputs/`
-
-```
-demo_outputs/
-├── vtest_demo_profile/      annotated.mp4 (79.5 s), demo.gif, demo_small.gif, summary.json, thumbnails/ (35)
-├── vtest_default_profile/   annotated.mp4, summary.json (rules + every alert), thumbnails/ (27)
-├── benchmark_fps.txt        scripts/benchmark_fps.py output
-├── live/                    alerts.db, clips/*.mp4, thumbnails/, metrics_snapshot.txt (Prometheus scrape)
-├── live_config/             cameras/models/alerts.yaml used for the live + soak runs
-├── stress_test_3m.txt       soak-test output (summary at the end)
-├── logs/                    stdout/stderr of setup, tests, render, bench, live, stress
-├── run_scripts/             run_all.sh, constraints.txt, render_demo.py
-└── STATUS.tsv               stage, result, duration
-```
-
 ## Why this design
 
 - **Detection vs. understanding.** Per-frame boxes are easy. Turning them into per-track
@@ -196,22 +181,6 @@ demo_outputs/
   data exists.
 - **Scope honesty.** [REVISED_PLAN.md](REVISED_PLAN.md) documents what changed from the
   original 6–8 week spec. [ROADMAP.md](ROADMAP.md) lists what needs datasets or hardware.
-
-## Project layout
-
-```
-sentinel/
-├── capture/      multi-source ingestion, reconnect, frame buffers
-├── detection/    YOLOv8 wrapper
-├── tracking/     trajectory store, tracker config (BoT-SORT/ByteTrack + ReID)
-├── anomaly/      rule-based detectors + LSTM autoencoder (Tier 2)
-├── actions/      Tier 2 SlowFast/X3D action recognition
-├── alerts/       dedup, severity, SQLite, clip/thumbnail extraction
-├── dashboard/    Streamlit app + pages
-├── core/         config, pipeline, render overlay, Prometheus metrics
-└── main.py       CLI entry point
-training/  scripts/  tests/  docker/  config/  docs/
-```
 
 ## License
 
