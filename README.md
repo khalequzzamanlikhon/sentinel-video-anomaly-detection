@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎥 Sentinel
+# Sentinel
 
 ### Multi-Camera Real-Time Video Anomaly Detection
 

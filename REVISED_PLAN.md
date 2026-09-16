@@ -1,11 +1,8 @@
 # Sentinel — Revised Project Plan
 
-This revises `project_sentinel_anomaly_detection.pdf` (the original "Sentinel" spec) into a plan that
-a solo developer can actually **build, run, and demo** without a lab's worth of infrastructure. The
-original spec is a great *north star* — this document splits it into what's implemented **now**
-(Tier 1, in this repo, working today) and what's a **documented stretch roadmap** (Tier 2/3) that
-would need real GPU time, curated datasets, and edge hardware the original 6–8 week/2-person plan
-assumed.
+My original Sentinel spec bundled more work than I could build and verify alone. This note records
+what I scoped it down to: Tier 1 is implemented in this repo and runs today; Tier 2/3 need GPU time,
+curated datasets and edge hardware, and are listed in ROADMAP.md instead.
 
 ## Why rescope?
 
